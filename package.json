@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "npx ts-node index.ts",
+    "ts-loader": "node --no-warnings --loader ts-node/esm",
+    "start": "npm run ts-loader index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Raznorabochiy",
